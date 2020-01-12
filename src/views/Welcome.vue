@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="hello">
+      <h1>my Vue Boilerplate</h1>
+      <p>Temos texto, e podemos utilizar buttons e inputs.</p>
+      <Button>myButtion</Button>
+      <ButtonOutlined>ButtonOutlined</ButtonOutlined>
+    </div>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { Button, ButtonOutlined } from '../components/atoms/buttons'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Button,
+    ButtonOutlined
   }
 }
 </script>
